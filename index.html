@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energía Total · Gimnasio Boutique en Movimiento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header>
+      <div class="nav-container">
+        <a class="logo" href="index.html">Energía Total</a>
+        <nav aria-label="Principal">
+          <ul>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-inner hero">
+          <div>
+            <h1>Activá tu cuerpo con la experiencia boutique de Energía Total</h1>
+            <p>
+              Entrenamientos diseñados por especialistas, cupos controlados y una experiencia
+              digital lista para acompañarte desde la reserva hasta la clase.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="clases.html">Explorar clases</a>
+              <a class="btn btn-secondary" href="reservas.html">Gestionar reservas</a>
+            </div>
+          </div>
+          <div class="card">
+            <span class="tag">Disponibilidad en vivo</span>
+            <h2>Agendá con confianza</h2>
+            <p>
+              Nuestros cupos se actualizan en tiempo real para que siempre sepas si queda lugar.
+            </p>
+            <ul class="list-inline" role="list">
+              <li>Cardio inteligente</li>
+              <li>Fuerza funcional</li>
+              <li>Mind &amp; Body</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="section-inner">
+          <div class="card-grid">
+            <article class="card">
+              <span class="tag">Reservá online</span>
+              <h3>Reservas ágiles</h3>
+              <p>
+                Filtrá por tipo de entrenamiento, fecha y horario. Confirmá en segundos y recibí la
+                confirmación en pantalla.
+              </p>
+            </article>
+            <article class="card">
+              <span class="tag">Seguimiento</span>
+              <h3>Disponibilidad clara</h3>
+              <p>
+                Visualizá los cupos disponibles antes de reservar y consultá el estado de tus
+                reservas activas.
+              </p>
+            </article>
+            <article class="card">
+              <span class="tag">Flexibilidad</span>
+              <h3>Cancelá sin complicaciones</h3>
+              <p>
+                Hasta dos horas antes del inicio podés liberar tu lugar y dejarlo disponible para
+                la comunidad.
+              </p>
+            </article>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <span>18</span>
+              <p>Clases semanales</p>
+            </div>
+            <div class="metric">
+              <span>12</span>
+              <p>Entrenadores certificados</p>
+            </div>
+            <div class="metric">
+              <span>100%</span>
+              <p>Disponibilidad transparente</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner layout-two-column">
+          <div>
+            <h2>Programación destacada</h2>
+            <p class="chip">Actualizada automáticamente desde el sistema de reservas.</p>
+          </div>
+          <div>
+            <p>
+              Elegimos las clases con mayor demanda para que puedas ver de un vistazo cómo se
+              encuentra la disponibilidad. Los cupos se sincronizan cada vez que se realiza una
+              reserva o cancelación.
+            </p>
+          </div>
+        </div>
+        <div class="section-inner" data-schedule></div>
+      </section>
+
+      <section class="section section-alt" id="contacto">
+        <div class="section-inner">
+          <div class="callout">
+            <h2>¿Listo para sumarte?</h2>
+            <p>
+              Coordiná una visita guiada o pedí tu clase de prueba. Estamos en Palermo, a pasos del
+              Jardín Botánico.
+            </p>
+            <div class="chip-group" role="list">
+              <span class="chip">WhatsApp: +54 9 11 5555-1234</span>
+              <span class="chip">Lun a Vie · 7 a 22 h</span>
+              <span class="chip">Sábados · 9 a 14 h</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; <span id="current-year"></span> Energía Total. Cuidamos tu energía en cada sesión.</p>
+        <nav aria-label="Secundario">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>

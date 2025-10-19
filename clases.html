@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clases · Energía Total</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="clases">
+    <header>
+      <div class="nav-container">
+        <a class="logo" href="index.html">Energía Total</a>
+        <nav aria-label="Principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clases.html" aria-current="page">Clases</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-inner layout-two-column">
+          <div>
+            <h1>Encontrá tu próxima clase</h1>
+            <p>
+              Filtrá por disciplina, fecha y horario. La disponibilidad se actualiza cada vez que se
+              reserva o se libera un cupo.
+            </p>
+            <ul class="list-steps">
+              <li>Elegí el tipo de clase que estás buscando.</li>
+              <li>Seleccioná la fecha o dejala libre para ver toda la agenda.</li>
+              <li>
+                Confirmá un horario disponible y reservá tu lugar con el botón directo de la ficha.
+              </li>
+            </ul>
+          </div>
+          <div class="form-card">
+            <div class="alert hidden" data-feedback role="status" aria-live="polite"></div>
+            <form class="form-grid" data-search-form>
+              <label>
+                Tipo de clase
+                <select name="type">
+                  <option value="">Todas</option>
+                </select>
+              </label>
+              <label>
+                Fecha
+                <input type="date" name="date" />
+              </label>
+              <label>
+                Horario
+                <select name="time">
+                  <option value="">Todos</option>
+                </select>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="section-inner" data-search-results></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; <span id="current-year"></span> Energía Total.</p>
+        <nav aria-label="Secundario">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clases.html" aria-current="page">Clases</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
