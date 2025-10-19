@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas · Energía Total</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="reservas">
+    <header>
+      <div class="nav-container">
+        <a class="logo" href="index.html">Energía Total</a>
+        <nav aria-label="Principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-inner">
+          <div class="layout-two-column">
+            <div>
+              <h1>Gestioná tus reservas</h1>
+              <p>
+                Desde acá podés reservar y cancelar tus clases en segundos. Las tablas muestran el
+                estado actualizado de los cupos.
+              </p>
+              <blockquote>
+                Tip: asegurate de cancelar con al menos 2 horas de anticipación para liberar el cupo
+                a otro socio.
+              </blockquote>
+            </div>
+            <div class="form-card">
+              <div class="alert hidden" data-feedback role="status" aria-live="assertive"></div>
+              <p>
+                <strong>¿Cómo funciona?</strong>
+              </p>
+              <ol class="list-steps">
+                <li>Elegí la clase desde la tabla y presioná “Reservar”.</li>
+                <li>Te confirmamos al instante y actualizamos la disponibilidad.</li>
+                <li>
+                  Si cambiás de idea, cancelá desde la misma tabla; el sistema liberará el cupo de
+                  inmediato.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="section-inner">
+          <h2>Agenda completa</h2>
+          <div class="table-wrapper" data-reservation-table></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <h2>Mis reservas confirmadas</h2>
+          <div data-my-reservations></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; <span id="current-year"></span> Energía Total.</p>
+        <nav aria-label="Secundario">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
